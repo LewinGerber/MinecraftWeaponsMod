@@ -1,0 +1,35 @@
+{
+  "entity.kappa_creeper.kappa_creeper_entity.kappa": {
+      "category": "entity",
+      "subtitle": "entity.kappa_creeper.kappa_creeper_entity.kappa",
+      "sounds": [
+        {
+          "name": "nawm:entity/entity.kappa_creeper.kappa_creeper_entity.kappa",
+          "stream": true
+        }
+      ]
+  },
+
+  "item.basic_item.fly": {
+    "category": "item",
+    "subtitle": "item.basic_item.fly",
+    "sounds": [
+      {
+        "name": "nawm:item/item.basic_item.fly",
+        "stream": true
+      }
+    ]
+  },
+
+  "item.cloaking_device.cloak": {
+    "category": "item",
+    "subtitle": "item.cloaking_device.cloak",
+    "sounds": [
+      {
+        "name": "nawm:item/item.cloaking_device.cloak",
+        "stream": true
+      }
+    ]
+  }
+
+}

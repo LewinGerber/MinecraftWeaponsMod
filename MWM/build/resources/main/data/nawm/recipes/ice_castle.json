@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " S ",
+    "SXS",
+    " S "
+  ],
+  "key":
+  {
+    "S":
+    {
+      "item": "minecraft:snow_block"
+    },
+    "X":
+    {
+      "item": "minecraft:packed_ice"
+    }
+  },
+  "result":
+  {
+    "item": "nawm:ice_castle",
+    "count": 1
+  }
+}

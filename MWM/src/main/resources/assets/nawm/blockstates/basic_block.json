@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "nawm:block/basic_block" }
+  }
+}

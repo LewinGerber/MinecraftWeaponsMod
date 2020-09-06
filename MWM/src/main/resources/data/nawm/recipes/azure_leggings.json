@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "x x",
+    "x x"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "nawm:azure"
+    }
+  },
+  "result":
+  {
+    "item": "nawm:azure_leggings",
+    "count": 1
+  }
+}

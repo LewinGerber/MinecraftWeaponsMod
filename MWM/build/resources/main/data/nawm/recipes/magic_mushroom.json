@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "xrx",
+    "xxx"
+
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "minecraft:emerald"
+    },
+    "r":
+    {
+      "item": "minecraft:red_mushroom"
+    }
+  },
+  "result":
+  {
+    "item": "nawm:magic_mushroom",
+    "count": 1
+  }
+}

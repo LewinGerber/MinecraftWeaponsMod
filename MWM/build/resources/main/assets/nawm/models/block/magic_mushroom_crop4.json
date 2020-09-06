@@ -1,0 +1,6 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "nawm:blocks/magic_mushroom_crop_stage4"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "x x"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "nawm:azure"
+    }
+  },
+  "result":
+  {
+    "item": "nawm:azure_helmet",
+    "count": 1
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "rer",
+    "ece",
+    "rer"
+  ],
+  "key":
+  {
+    "e":
+    {
+      "item": "minecraft:ender_eye"
+    },
+    "r":
+    {
+      "item": "minecraft:redstone"
+    },
+    "c":
+    {
+      "item": "minecraft:coal"
+    }
+  },
+  "result":
+  {
+    "item": "nawm:amaterasu_bow",
+    "count": 1
+  }
+}

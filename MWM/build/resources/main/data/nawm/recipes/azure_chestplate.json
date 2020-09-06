@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "x x",
+    "xxx",
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "nawm:azure"
+    }
+  },
+  "result":
+  {
+    "item": "nawm:azure_chestplate",
+    "count": 1
+  }
+}

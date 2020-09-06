@@ -1,0 +1,34 @@
+{
+  "item.nawm.basic_item": "Basic Item",
+  "item.nawm.adventure_sword": "Adventure",
+  "item.nawm.scythe": "Scythe",
+  "item.nawm.ice_castle": "Ice Castle",
+  "item.nawm.magic_mushroom": "OneUp Shroom",
+  "item.nawm.thunder": "Thunder",
+  "item.nawm.rain": "Tear",
+  "item.nawm.wind": "Wind",
+  "item.nawm.day": "Sun",
+  "item.nawm.night": "Shadow",
+  "item.nawm.azure": "Azure",
+  "item.nawm.azure_helmet": "Azure Helmet",
+  "item.nawm.azure_chestplate": "Azure Chestplate",
+  "item.nawm.azure_leggings": "Azure Leggings",
+  "item.nawm.azure_boots": "Azure Boots",
+  "item.nawm.amaterasu_bow": "Amaterasu Bow",
+  "item.nawm.cloaking_device": "Cloaking Device",
+
+  "block.nawm.basic_block": "Basic Block",
+  "block.nawm.magic_mushroom_crop": "Magic Seeds",
+
+  "enchantment.nawm.life_steal": "Reaper",
+  "enchantment.nawm.amaterasu": "Amaterasu",
+  "enchantment.nawm.explosion": "Explosion",
+
+  "entity.nawm.kappa_creeper": "Kappa Creeper",
+  "entity.nawm.raccoon": "Raccoon",
+
+  "item.nawm.kappa_creeper_spawn_egg": "Kappa Creeper",
+  "item.nawm.raccoon_spawn_egg": "Raccoon",
+
+  "itemGroup.nAWM": "Minecraft Weapons Mod"
+}
