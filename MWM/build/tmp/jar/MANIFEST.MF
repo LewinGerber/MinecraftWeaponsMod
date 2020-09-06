@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
-Implementation-Title: (n)AWM
+Implementation-Title: MWM
 Implementation-Version: 1.0
 Specification-Vendor: examplemodsareus
 Specification-Title: examplemod
-Implementation-Timestamp: 2020-06-14T20:51:49+0200
+Implementation-Timestamp: 2020-09-06T19:23:01+0200
 Specification-Version: 1
 Implementation-Vendor: examplemodsareus
 
