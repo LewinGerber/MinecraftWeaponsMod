@@ -7,3 +7,4 @@ and just have fun with it.
 
 Textures: https://minecraft.novaskin.me/search?q=textures%20png
 
+(this repo is based on: https://github.com/LewinGerber/src-Java-Modification-)
