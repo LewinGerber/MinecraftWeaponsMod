@@ -1,6 +1,5 @@
 # ⚔ Minecraft Weapons Mod
 
-# Hello, folks! <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">
 This is the official page of the Minecraft weapons mod. 
 This is a small Minecraft Modification which implements
 multiple different items to create more fun PVP battles.
