@@ -3,6 +3,7 @@
 
 # Log file
 *.log
+*.gz
 
 # BlueJ files
 *.ctxt
@@ -24,4 +25,5 @@
 
 #minecraft
 MWM/run/
-MWM/.gradle/
+*.lock
+*.bin
