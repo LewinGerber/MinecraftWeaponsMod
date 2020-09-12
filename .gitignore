@@ -24,4 +24,4 @@
 
 #minecraft
 MWM/run/
-*.gradle
+MWM/.gradle/
