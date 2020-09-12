@@ -23,4 +23,5 @@
 **/.idea
 
 #minecraft
-./MWM/run/
+MWM/run/
+*.gradle
