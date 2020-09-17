@@ -21,10 +21,10 @@ public class TimeControl extends Item {
     @Override
     public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn) {
 
-        if (worldIn.getGameTime() < 12000) {
-            worldIn.setGameTime(13000);
+        if (worldIn.getDayTime() < 12750) {
+            worldIn.setDayTime(13500);
         } else {
-            worldIn.setGameTime(1000);
+            worldIn.setDayTime(1000);
         }
 
         return super.onItemRightClick(worldIn, playerIn, handIn);
