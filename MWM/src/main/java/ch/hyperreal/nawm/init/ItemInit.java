@@ -14,6 +14,7 @@ import ch.hyperreal.nawm.objects.items.foods.MagicMushroom;
 import ch.hyperreal.nawm.objects.items.material.Azure;
 import ch.hyperreal.nawm.objects.items.tools.AdventureSword;
 import ch.hyperreal.nawm.objects.items.tools.AmaterasuBow;
+import ch.hyperreal.nawm.objects.items.tools.ArrowThrower;
 import ch.hyperreal.nawm.objects.items.tools.Scythe;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.RegistryObject;
@@ -61,6 +62,7 @@ public class ItemInit {
     public static final RegistryObject<Item> ADVENTURE_SWORD = ITEMS.register("adventure_sword", () -> new AdventureSword());
     public static final RegistryObject<Item> SCYTHE = ITEMS.register("scythe", () -> new Scythe());
     public static final RegistryObject<Item> AMATERASU_BOW = ITEMS.register("amaterasu_bow", () -> new AmaterasuBow());
+    public static final RegistryObject<Item> ARROW_THROWER = ITEMS.register("arrow_thrower", () -> new ArrowThrower());
 
     //seed
     public static final RegistryObject<Item> MAGIC_MUSHROOM_SEED = ITEMS.register("magic_mushroom_seed", () -> new MagicMushroomSeed());

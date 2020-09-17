@@ -3,7 +3,6 @@
 
 # Log file
 *.log
-*.gz
 
 # BlueJ files
 *.ctxt
@@ -27,5 +26,3 @@
 MWM/run/
 *.lock
 *.bin
-MWM/.gradle/4.10.3/fileHashes/fileHashes.bin
-MWM/.gradle/4.10.3/fileHashes/fileHashes.lock
