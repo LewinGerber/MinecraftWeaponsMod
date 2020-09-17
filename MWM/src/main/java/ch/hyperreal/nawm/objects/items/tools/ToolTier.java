@@ -1,6 +1,6 @@
 package ch.hyperreal.nawm.objects.items.tools;
 
-import ch.hyperreal.nawm.objects.items.special.BasicItem;
+import ch.hyperreal.nawm.objects.items.misc.BasicItem;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.LazyValue;

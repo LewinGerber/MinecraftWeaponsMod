@@ -3,7 +3,7 @@ package ch.hyperreal.nawm.init;
 import ch.hyperreal.nawm.objects.items.ModSpawnEggItem;
 import ch.hyperreal.nawm.objects.items.mob.KappaCreeperSpawnEgg;
 import ch.hyperreal.nawm.objects.items.mob.RaccoonSpawnEgg;
-import ch.hyperreal.nawm.objects.items.special.*;
+import ch.hyperreal.nawm.objects.items.misc.*;
 import ch.hyperreal.nawm.MinecraftWeaponsMod;
 import ch.hyperreal.nawm.objects.blocks.seeds.MagicMushroomSeed;
 import ch.hyperreal.nawm.objects.items.armor.azure.AzureBoots;
@@ -34,17 +34,11 @@ public class ItemInit {
     public static final RegistryObject<Item> BASIC_ITEM = ITEMS.register("basic_item", () -> new BasicItem());
     public static final RegistryObject<Item> ICE_CASTLE = ITEMS.register("ice_castle", () -> new IceCastle());
     public static final RegistryObject<Item> CLOAKING_DEVICE = ITEMS.register("cloaking_device", () -> new CloakingDevice());
+    public static final RegistryObject<Item> TIME_CONTROL = ITEMS.register("time_control", () -> new TimeControl());
 
     //spawn eggs
     public static final RegistryObject<ModSpawnEggItem> KAPPA_CREEPER_SPAWN_EGG = ITEMS.register("kappa_creeper_spawn_egg", () -> new KappaCreeperSpawnEgg());
     public static final RegistryObject<ModSpawnEggItem> RACCOON_SPAWN_EGG = ITEMS.register("raccoon_spawn_egg", () -> new RaccoonSpawnEgg());
-
-    //weather -> AZURE
-    public static final RegistryObject<Item> THUNDER = ITEMS.register("thunder", () -> new Thunder());
-    public static final RegistryObject<Item> WIND = ITEMS.register("wind", () -> new Wind());
-    public static final RegistryObject<Item> RAIN = ITEMS.register("rain", () -> new Rain());
-    public static final RegistryObject<Item> DAY = ITEMS.register("day", () -> new Day());
-    public static final RegistryObject<Item> NIGHT = ITEMS.register("night", () -> new Night());
 
     //material
     public static final RegistryObject<Item> AZURE = ITEMS.register("azure", () -> new Azure());
