@@ -3,6 +3,7 @@
 
 # Log file
 *.log
+*.gz
 
 # BlueJ files
 *.ctxt
@@ -23,4 +24,6 @@
 **/.idea
 
 #minecraft
-**/run/
+MWM/run/
+*.lock
+*.bin
