@@ -26,3 +26,6 @@
 MWM/run/
 *.lock
 *.bin
+
+#gradle
+*.properties
