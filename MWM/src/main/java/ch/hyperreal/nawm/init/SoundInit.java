@@ -24,5 +24,7 @@ public class SoundInit {
 
     public static final RegistryObject<SoundEvent> CLOAK = SOUNDS.register("item.cloaking_device.cloak",
             ()-> new SoundEvent(new ResourceLocation(MinecraftWeaponsMod.MOD_ID, "item.cloaking_device.cloak")));
+    public static final RegistryObject<SoundEvent> AMATERASU = SOUNDS.register("item.amaterasu_bow.amaterasu",
+            () ->new SoundEvent(new ResourceLocation(MinecraftWeaponsMod.MOD_ID,"item.amaterasu_bow.amaterasu")));
 
 }
