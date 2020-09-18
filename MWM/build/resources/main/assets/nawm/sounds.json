@@ -30,6 +30,17 @@
         "stream": true
       }
     ]
+  },
+
+  "item.amaterasu_bow.amaterasu": {
+    "category": "item",
+    "subtitle": "item.amaterasu_bow.amaterasu",
+    "sounds": [
+      {
+        "name": "nawm:item/item.amaterasu_bow.amaterasu",
+        "stream": true
+      }
+    ]
   }
 
 }
