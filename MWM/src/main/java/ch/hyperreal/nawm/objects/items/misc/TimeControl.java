@@ -1,11 +1,13 @@
 package ch.hyperreal.nawm.objects.items.misc;
 
 import ch.hyperreal.nawm.MinecraftWeaponsMod;
+import ch.hyperreal.nawm.init.SoundInit;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
+import net.minecraft.util.SoundEvent;
 import net.minecraft.world.World;
 
 /**
@@ -28,5 +30,9 @@ public class TimeControl extends Item {
         }
 
         return super.onItemRightClick(worldIn, playerIn, handIn);
+    }
+
+    public SoundEvent getTimeSound() {
+        return SoundInit.TIME.get();
     }
 }
