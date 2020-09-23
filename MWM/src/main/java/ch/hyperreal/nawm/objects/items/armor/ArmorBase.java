@@ -29,7 +29,7 @@ public class ArmorBase {
         private final LazyValue<Ingredient> repairMaterial;
 
 
-        private ModArmorMaterial(String name, int maxDamageFactor, int[] damageReductionAmount, int enchantability, SoundEvent soundEvent, float toughness, Supplier<Ingredient> repairMaterial) {
+        ModArmorMaterial(String name, int maxDamageFactor, int[] damageReductionAmount, int enchantability, SoundEvent soundEvent, float toughness, Supplier<Ingredient> repairMaterial) {
             this.name = name;
             this.maxDamageFactor = maxDamageFactor;
             this.damageReductionAmountArray = damageReductionAmount;

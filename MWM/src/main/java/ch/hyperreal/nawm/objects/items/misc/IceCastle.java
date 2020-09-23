@@ -43,7 +43,7 @@ public class IceCastle extends Item {
         worldIn.setBlockState(new BlockPos(posX-1, posY,posZ+1), Blocks.PACKED_ICE.getDefaultState());
         worldIn.setBlockState(new BlockPos(posX-1, posY,posZ-1), Blocks.PACKED_ICE.getDefaultState());
 
-        //outter cross
+        //outer cross
         worldIn.setBlockState(new BlockPos(posX+2, posY,posZ), Blocks.PACKED_ICE.getDefaultState());
         //tall icicle 1
         worldIn.setBlockState(new BlockPos(posX+2, posY+1,posZ), Blocks.PACKED_ICE.getDefaultState());

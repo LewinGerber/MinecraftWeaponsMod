@@ -1,7 +1,10 @@
 package ch.hyperreal.nawm.entities.kappa_creeper;
 
 import ch.hyperreal.nawm.init.SoundInit;
-import net.minecraft.entity.*;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.IChargeableMob;
+import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.effect.LightningBoltEntity;
 import net.minecraft.entity.monster.CreeperEntity;
@@ -15,14 +18,11 @@ import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.network.datasync.DataParameter;
 import net.minecraft.network.datasync.DataSerializers;
 import net.minecraft.network.datasync.EntityDataManager;
-import net.minecraft.potion.EffectInstance;
 import net.minecraft.util.*;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
-
-import java.util.Collection;
 
 /**
  * @author Lewin Gerber
@@ -44,7 +44,7 @@ public class KappaCreeperEntity extends MonsterEntity implements IChargeableMob 
     private int fuseTime = 30;
     private int explosionRadius = 3;
     private int droppedSkulls;
-    private World world;
+    private final World world;
 
     public KappaCreeperEntity(EntityType<KappaCreeperEntity> type, World worldIn) {
         super(type, worldIn);
@@ -70,7 +70,7 @@ public class KappaCreeperEntity extends MonsterEntity implements IChargeableMob 
     }
 
     /**
-     * The maximum height from where the entity is alowed to jump (used in pathfinder)
+     * The maximum height from where the entity is allowed to jump (used in pathfinder)
      */
     public int getMaxFallHeight() {
         return this.getAttackTarget() == null ? 3 : 3 + (int)(this.getHealth() - 1.0F);
@@ -164,7 +164,7 @@ public class KappaCreeperEntity extends MonsterEntity implements IChargeableMob 
     protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
         super.dropSpecialItems(source, looting, recentlyHitIn);
         Entity entity = source.getTrueSource();
-        if (entity != this && entity instanceof CreeperEntity) {
+        if (entity instanceof CreeperEntity) {
             CreeperEntity creeperentity = (CreeperEntity)entity;
             if (creeperentity.ableToCauseSkullDrop()) {
                 creeperentity.incrementDroppedSkulls();
@@ -218,9 +218,7 @@ public class KappaCreeperEntity extends MonsterEntity implements IChargeableMob 
             this.world.playSound(player, this.getPosX(), this.getPosY(), this.getPosZ(), SoundEvents.ITEM_FLINTANDSTEEL_USE, this.getSoundCategory(), 1.0F, this.rand.nextFloat() * 0.4F + 0.8F);
             if (!this.world.isRemote) {
                 this.ignite();
-                itemstack.damageItem(1, player, (p_213625_1_) -> {
-                    p_213625_1_.sendBreakAnimation(hand);
-                });
+                itemstack.damageItem(1, player, (p_213625_1_) -> p_213625_1_.sendBreakAnimation(hand));
             }
 
             return true;
@@ -238,40 +236,12 @@ public class KappaCreeperEntity extends MonsterEntity implements IChargeableMob 
         this.remove();
     }
 
-    private void spawnLingeringCloud() {
-        Collection<EffectInstance> collection = this.getActivePotionEffects();
-        if (!collection.isEmpty()) {
-            AreaEffectCloudEntity areaeffectcloudentity = new AreaEffectCloudEntity(this.world, this.getPosX(), this.getPosY(), this.getPosZ());
-            areaeffectcloudentity.setRadius(2.5F);
-            areaeffectcloudentity.setRadiusOnUse(-0.5F);
-            areaeffectcloudentity.setWaitTime(10);
-            areaeffectcloudentity.setDuration(areaeffectcloudentity.getDuration() / 2);
-            areaeffectcloudentity.setRadiusPerTick(-areaeffectcloudentity.getRadius() / (float)areaeffectcloudentity.getDuration());
-
-            for(EffectInstance effectinstance : collection) {
-                areaeffectcloudentity.addEffect(new EffectInstance(effectinstance));
-            }
-
-            this.world.addEntity(areaeffectcloudentity);
-        }
-
-    }
-
     public boolean hasIgnited() {
         return this.dataManager.get(IGNITED);
     }
 
     public void ignite() {
         this.dataManager.set(IGNITED, true);
-    }
-
-    /**
-     * Returns true if an entity is able to drop its skull due to being blown up by this creeper.
-     *
-     * Does not test if this creeper is charged; the caller must do that. However, does test the doMobLoot gamerule.
-     */
-    public boolean ableToCauseSkullDrop() {
-        return this.isCharged() && this.droppedSkulls < 1;
     }
 
     public void incrementDroppedSkulls() {

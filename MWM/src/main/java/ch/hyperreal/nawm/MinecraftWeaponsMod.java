@@ -17,6 +17,8 @@ import net.minecraftforge.registries.IForgeRegistry;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.util.Objects;
+
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod("nawm")
 public class MinecraftWeaponsMod {
@@ -49,7 +51,7 @@ public class MinecraftWeaponsMod {
                 .map(RegistryObject::get).forEach(block -> {
             final Item.Properties properties = new Item.Properties().group(WeaponItemGroup.instance);
             final BlockItem blockItem = new BlockItem(block, properties);
-            blockItem.setRegistryName(block.getRegistryName());
+            blockItem.setRegistryName(Objects.requireNonNull(block.getRegistryName()));
             registry.register(blockItem);
         });
     }

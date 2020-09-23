@@ -1,12 +1,14 @@
 package ch.hyperreal.nawm.entities;
 
 import ch.hyperreal.nawm.init.ModEntityTypes;
-import net.minecraft.entity.*;
+import net.minecraft.entity.AgeableEntity;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.SharedMonsterAttributes;
+import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.effect.LightningBoltEntity;
 import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
@@ -21,7 +23,7 @@ public class Raccoon extends AnimalEntity {
     public AgeableEntity createChild(AgeableEntity ageable) {
         Raccoon entity = new Raccoon(ModEntityTypes.RACCOON.get(), this.world);
         entity.onInitialSpawn(this.world, this.world.getDifficultyForLocation(new BlockPos(entity)),
-                SpawnReason.BREEDING, (ILivingEntityData)null, (CompoundNBT)null);
+                SpawnReason.BREEDING, null, null);
         entity.setGlowing(true);
         return entity;
     }

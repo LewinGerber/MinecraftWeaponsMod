@@ -17,7 +17,6 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 @OnlyIn(Dist.CLIENT)
 public class KappaCreeperModel<T extends Entity> extends SegmentedModel<T> {
     private final ModelRenderer head;
-    private final ModelRenderer creeperArmor;
     private final ModelRenderer body;
     private final ModelRenderer leg1;
     private final ModelRenderer leg2;
@@ -29,13 +28,12 @@ public class KappaCreeperModel<T extends Entity> extends SegmentedModel<T> {
     }
 
     public KappaCreeperModel(float p_i46366_1_) {
-        int i = 6;
         this.head = new ModelRenderer(this, 0, 0);
         this.head.addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, p_i46366_1_);
         this.head.setRotationPoint(0.0F, 6.0F, 0.0F);
-        this.creeperArmor = new ModelRenderer(this, 32, 0);
-        this.creeperArmor.addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, p_i46366_1_ + 0.5F);
-        this.creeperArmor.setRotationPoint(0.0F, 6.0F, 0.0F);
+        ModelRenderer creeperArmor = new ModelRenderer(this, 32, 0);
+        creeperArmor.addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, p_i46366_1_ + 0.5F);
+        creeperArmor.setRotationPoint(0.0F, 6.0F, 0.0F);
         this.body = new ModelRenderer(this, 16, 16);
         this.body.addBox(-4.0F, 0.0F, -2.0F, 8.0F, 12.0F, 4.0F, p_i46366_1_);
         this.body.setRotationPoint(0.0F, 6.0F, 0.0F);

@@ -3,7 +3,6 @@ package ch.hyperreal.nawm.objects.items.mob;
 import ch.hyperreal.nawm.MinecraftWeaponsMod;
 import ch.hyperreal.nawm.init.ModEntityTypes;
 import ch.hyperreal.nawm.objects.items.ModSpawnEggItem;
-import net.minecraft.item.SpawnEggItem;
 
 /**
  * @author Lewin Gerber

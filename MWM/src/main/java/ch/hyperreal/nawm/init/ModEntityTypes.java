@@ -18,14 +18,14 @@ public class ModEntityTypes {
 
     public static final RegistryObject<EntityType<Raccoon>> RACCOON = ENTITY_TYPES
             .register("raccoon",
-                    () -> EntityType.Builder.<Raccoon>create(Raccoon::new, EntityClassification.CREATURE)
+                    () -> EntityType.Builder.create(Raccoon::new, EntityClassification.CREATURE)
                             .size(0.6f, 0.85f)
                             .build(new ResourceLocation(MinecraftWeaponsMod.MOD_ID, "raccoon").toString())
             );
 
     public static final RegistryObject<EntityType<KappaCreeperEntity>> KAPPA_CREEPER = ENTITY_TYPES
             .register( "kappa_creeper",
-                    () -> EntityType.Builder.<KappaCreeperEntity>create(KappaCreeperEntity::new, EntityClassification.MONSTER)
+                    () -> EntityType.Builder.create(KappaCreeperEntity::new, EntityClassification.MONSTER)
                         .size(0.6f, 0.85f)
                         .build(new ResourceLocation(MinecraftWeaponsMod.MOD_ID, "kappa_creeper").toString())
             );

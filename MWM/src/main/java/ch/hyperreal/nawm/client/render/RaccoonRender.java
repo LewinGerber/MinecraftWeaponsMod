@@ -13,7 +13,7 @@ public class RaccoonRender extends MobRenderer<Raccoon, RaccoonModel<Raccoon>> {
             "textures/entity/raccoon.png");
 
     public RaccoonRender(EntityRendererManager renderManagerIn) {
-        super(renderManagerIn, new RaccoonModel<Raccoon>(), 0.5f);
+        super(renderManagerIn, new RaccoonModel<>(), 0.5f);
     }
 
     @Override

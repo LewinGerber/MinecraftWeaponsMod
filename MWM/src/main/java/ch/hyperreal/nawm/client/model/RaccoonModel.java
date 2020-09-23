@@ -90,35 +90,4 @@ public class RaccoonModel<T extends Raccoon> extends EntityModel<T> {
         super.setLivingAnimations(entityIn, limbSwing, limbSwingAmount, partialTick);
     }
 
-    public ModelRenderer getBody() {
-        return body;
-    }
-
-    public ModelRenderer getHead() {
-        return head;
-    }
-
-    public ModelRenderer getLeg1() {
-        return leg1;
-    }
-
-    public ModelRenderer getLeg2() {
-        return leg2;
-    }
-
-    public ModelRenderer getLeg3() {
-        return leg3;
-    }
-
-    public ModelRenderer getLeg4() {
-        return leg4;
-    }
-
-    public ModelRenderer getMane() {
-        return mane;
-    }
-
-    public ModelRenderer getTail() {
-        return tail;
-    }
 }

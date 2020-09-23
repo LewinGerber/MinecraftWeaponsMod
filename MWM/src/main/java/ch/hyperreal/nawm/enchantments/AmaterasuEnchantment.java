@@ -18,7 +18,7 @@ public class AmaterasuEnchantment extends Enchantment {
 
     public AmaterasuEnchantment() {
         super(Enchantment.Rarity.VERY_RARE, EnchantmentType.create("amaterasu_bow", item -> item.equals(ItemInit.AMATERASU_BOW.get())),
-                new EquipmentSlotType[]{EquipmentSlotType.CHEST.MAINHAND});
+                new EquipmentSlotType[]{EquipmentSlotType.MAINHAND});
     }
 
     @Override
@@ -32,7 +32,7 @@ public class AmaterasuEnchantment extends Enchantment {
     }
 
     /*  @Override
-      public int calcDamagByCreature(int level) {
+      public int calcDamageByCreature(int level) {
 
           return super.calcModifierDamage(1, DamageSource.ON_FIRE.setDamageIsAbsolute().setFireDamage().setExplosion().setMagicDamage());
       }

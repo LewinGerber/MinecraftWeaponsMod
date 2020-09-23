@@ -45,6 +45,5 @@ public class MagicMushroom extends Item{
                 .effect(new EffectInstance(Effects.ABSORPTION, 4500, 4), 0.999999999999999999999999999999999f)
                 .effect(new EffectInstance(Effects.WITHER,4500,4),0.1f).build()));
         //Hello World 2.0
-        ;
     }
 }

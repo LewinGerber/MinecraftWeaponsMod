@@ -10,7 +10,7 @@ import net.minecraft.inventory.EquipmentSlotType;
 public class LifeStealEnchantment extends Enchantment {
     public LifeStealEnchantment() {
         super(Enchantment.Rarity.VERY_RARE, EnchantmentType.create("scythe", item -> item.equals(ItemInit.SCYTHE.get())),
-                new EquipmentSlotType[]{EquipmentSlotType.CHEST.MAINHAND});
+                new EquipmentSlotType[]{EquipmentSlotType.MAINHAND});
     }
 
     @Override

@@ -22,7 +22,7 @@ public class ExplosionEnchantment extends Enchantment {
         super(
                 Rarity.COMMON,
                 EnchantmentType.WEAPON,
-                new EquipmentSlotType[]{EquipmentSlotType.CHEST.MAINHAND}
+                new EquipmentSlotType[]{EquipmentSlotType.MAINHAND}
                 );
     }
 
@@ -47,6 +47,7 @@ public class ExplosionEnchantment extends Enchantment {
                 break;
         }
         user.setInvulnerable(true);
+        assert explosionMode != null;
         world.createExplosion(target, target.getPosX(), target.getPosY(), target.getPosZ(), level*2, explosionMode);
         user.setInvulnerable(false);
     }

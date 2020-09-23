@@ -13,11 +13,11 @@ public class EnchantmentInit {
     public static final DeferredRegister<Enchantment> ENCHANTMENTS = new DeferredRegister<>(ForgeRegistries.ENCHANTMENTS, MinecraftWeaponsMod.MOD_ID);
 
     public static final RegistryObject<Enchantment> AMATERASU = ENCHANTMENTS
-            .register("amaterasu", () -> new AmaterasuEnchantment());
+            .register("amaterasu", AmaterasuEnchantment::new);
 
     public static final RegistryObject<Enchantment> EXPLOSION = ENCHANTMENTS
-            .register("explosion", () -> new ExplosionEnchantment());
+            .register("explosion", ExplosionEnchantment::new);
 
     public static final RegistryObject<Enchantment> LIFE_STEAL = ENCHANTMENTS
-            .register("life_steal", () -> new LifeStealEnchantment());
+            .register("life_steal", LifeStealEnchantment::new);
 }
