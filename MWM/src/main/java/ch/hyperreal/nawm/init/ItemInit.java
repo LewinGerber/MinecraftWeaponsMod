@@ -12,11 +12,14 @@ import ch.hyperreal.nawm.objects.items.armor.azure.AzureHelmet;
 import ch.hyperreal.nawm.objects.items.armor.azure.AzureLeggings;
 import ch.hyperreal.nawm.objects.items.foods.MagicMushroom;
 import ch.hyperreal.nawm.objects.items.material.Azure;
-import ch.hyperreal.nawm.objects.items.tools.AdventureSword;
-import ch.hyperreal.nawm.objects.items.tools.AmaterasuBow;
-import ch.hyperreal.nawm.objects.items.tools.ArrowThrower;
-import ch.hyperreal.nawm.objects.items.tools.Scythe;
+import ch.hyperreal.nawm.objects.items.tools.*;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.HandSide;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -63,6 +66,8 @@ public class ItemInit {
     public static final RegistryObject<Item> SCYTHE = ITEMS.register("scythe", () -> new Scythe());
     public static final RegistryObject<Item> AMATERASU_BOW = ITEMS.register("amaterasu_bow", () -> new AmaterasuBow());
     public static final RegistryObject<Item> ARROW_THROWER = ITEMS.register("arrow_thrower", () -> new ArrowThrower());
+
+    public static final RegistryObject<Item> HALF_SWORD = ITEMS.register("half_sword", () -> new HalfSword());
 
     //seed
     public static final RegistryObject<Item> MAGIC_MUSHROOM_SEED = ITEMS.register("magic_mushroom_seed", () -> new MagicMushroomSeed());
