@@ -35,6 +35,7 @@ public class ItemInit {
     public static final RegistryObject<Item> ICE_CASTLE = ITEMS.register("ice_castle", () -> new IceCastle());
     public static final RegistryObject<Item> CLOAKING_DEVICE = ITEMS.register("cloaking_device", () -> new CloakingDevice());
     public static final RegistryObject<Item> TIME_CONTROL = ITEMS.register("time_control", () -> new TimeControl());
+    public static final RegistryObject<Item> HEALTH_PACK = ITEMS.register("health_pack", () -> new HealthPack());
 
     //spawn eggs
     public static final RegistryObject<ModSpawnEggItem> KAPPA_CREEPER_SPAWN_EGG = ITEMS.register("kappa_creeper_spawn_egg", () -> new KappaCreeperSpawnEgg());
