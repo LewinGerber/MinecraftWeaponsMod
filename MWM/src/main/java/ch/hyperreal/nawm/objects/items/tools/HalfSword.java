@@ -30,5 +30,4 @@ public class HalfSword extends SwordItem {
         target.setHealth(target.getHealth()/2);
         return super.hitEntity(stack, target, attacker);
     }
-
 }
