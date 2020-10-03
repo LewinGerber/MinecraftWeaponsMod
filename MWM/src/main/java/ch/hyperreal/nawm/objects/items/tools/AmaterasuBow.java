@@ -18,17 +18,15 @@ public class AmaterasuBow extends BowItem {
     public AmaterasuBow() {
         super(new Item.Properties().maxDamage(8).group(MinecraftWeaponsMod.WeaponItemGroup.instance));
     }
+
     @Override
     public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn) {
-        worldIn.playSound(playerIn.getPosX(), playerIn.getPosY(), playerIn.getPosZ(), getAmaterasuSound(), SoundCategory.HOSTILE, 2.0F, 1.0F, true);
+        worldIn.playSound(playerIn.getPosX(), playerIn.getPosY(), playerIn.getPosZ(), getAmaterasuSound(), SoundCategory.HOSTILE, 0.5F, 1.0F, true);
         return super.onItemRightClick(worldIn, playerIn, handIn);
     }
 
-
-    // muss sound noch fixen auch in resources
     public SoundEvent getAmaterasuSound() {
        return SoundInit.AMATERASU.get();
-
     }
 
 }

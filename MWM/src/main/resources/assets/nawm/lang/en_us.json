@@ -14,6 +14,9 @@
   "item.nawm.cloaking_device": "Cloaking Device",
   "item.nawm.time_control": "Time Control",
   "item.nawm.health_pack": "Health Pack",
+  "item.nawm.kappa_creeper_spawn_egg": "Kappa Creeper",
+  "item.nawm.raccoon_spawn_egg": "Raccoon",
+  "item.nawm.arrow_thrower": "Arrow Thrower",
 
   "block.nawm.basic_block": "Basic Block",
   "block.nawm.magic_mushroom_crop": "Magic Seeds",
@@ -24,11 +27,6 @@
 
   "entity.nawm.kappa_creeper": "Kappa Creeper",
   "entity.nawm.raccoon": "Raccoon",
-
-  "item.nawm.kappa_creeper_spawn_egg": "Kappa Creeper",
-  "item.nawm.raccoon_spawn_egg": "Raccoon",
-
-  "item.nawm.arrow_thrower": "Arrow Thrower",
 
   "itemGroup.nAWM": "Minecraft Weapons Mod"
 }

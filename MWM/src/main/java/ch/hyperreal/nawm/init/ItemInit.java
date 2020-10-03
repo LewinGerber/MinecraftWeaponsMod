@@ -38,6 +38,7 @@ public class ItemInit {
     public static final RegistryObject<Item> ICE_CASTLE = ITEMS.register("ice_castle", IceCastle::new);
     public static final RegistryObject<Item> CLOAKING_DEVICE = ITEMS.register("cloaking_device", CloakingDevice::new);
     public static final RegistryObject<Item> TIME_CONTROL = ITEMS.register("time_control", TimeControl::new);
+    public static final RegistryObject<Item> HEALTH_PACK = ITEMS.register("health_pack", HealthPack::new);
 
     //spawn eggs
     public static final RegistryObject<ModSpawnEggItem> KAPPA_CREEPER_SPAWN_EGG = ITEMS.register("kappa_creeper_spawn_egg", KappaCreeperSpawnEgg::new);
@@ -60,6 +61,7 @@ public class ItemInit {
     public static final RegistryObject<Item> SCYTHE = ITEMS.register("scythe", Scythe::new);
     public static final RegistryObject<Item> AMATERASU_BOW = ITEMS.register("amaterasu_bow", AmaterasuBow::new);
     public static final RegistryObject<Item> ARROW_THROWER = ITEMS.register("arrow_thrower", ArrowThrower::new);
+    public static final RegistryObject<Item> HALF_SWORD = ITEMS.register("half_sword", HalfSword::new);
 
     //seed
     public static final RegistryObject<Item> MAGIC_MUSHROOM_SEED = ITEMS.register("magic_mushroom_seed", MagicMushroomSeed::new);
