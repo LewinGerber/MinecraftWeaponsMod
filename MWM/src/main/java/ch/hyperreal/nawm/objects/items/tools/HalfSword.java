@@ -21,12 +21,8 @@ import net.minecraft.world.World;
  * @version 03.10.2020
  */
 public class HalfSword extends SwordItem {
-    private float destroyStrength;
-    private BlockState temporaryBlockState;
-
     public HalfSword() {
         super(ToolTier.AdventureTier.HALF_SWORD, 0, 0.0F, new Item.Properties().group(MinecraftWeaponsMod.WeaponItemGroup.instance));
-        destroyStrength = 100.0F;
     }
 
     @Override
