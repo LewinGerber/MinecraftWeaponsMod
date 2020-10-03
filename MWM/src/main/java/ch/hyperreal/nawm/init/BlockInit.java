@@ -18,5 +18,5 @@ public class BlockInit {
     public static final DeferredRegister<Block> BLOCKS = new DeferredRegister<>(ForgeRegistries.BLOCKS, MinecraftWeaponsMod.MOD_ID);
 
     public static final RegistryObject<Block> MAGIC_MUSHROOM_CROP = BLOCKS.register("magic_mushroom_crop", MagicMushroomCrop::new);
-    public static final RegistryObject<Block> BASIC_BLOCK = BLOCKS.register("basic_block", MagicMushroomCrop::new);
+    public static final RegistryObject<Block> BASIC_BLOCK = BLOCKS.register("basic_block", BasicBlock::new);
 }
