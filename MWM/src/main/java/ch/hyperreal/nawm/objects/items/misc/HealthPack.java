@@ -21,7 +21,7 @@ import java.util.Date;
 public class HealthPack extends Item {
 
     public HealthPack() {
-        super(new Properties().maxDamage(1).maxStackSize(4).group(MinecraftWeaponsMod.WeaponItemGroup.instance));
+        super(new Properties().maxDamage(1).group(MinecraftWeaponsMod.WeaponItemGroup.instance));
     }
 
     @Override
