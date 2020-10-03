@@ -27,10 +27,6 @@ public class HalfSword extends SwordItem {
 
     @Override
     public boolean hitEntity(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        float healthBeg = target.getHealth();
-        if(target.getHealth() <= 1.0F) {
-            return super.hitEntity(stack, target, attacker);
-        }
         target.setHealth(target.getHealth()/2);
         return super.hitEntity(stack, target, attacker);
     }

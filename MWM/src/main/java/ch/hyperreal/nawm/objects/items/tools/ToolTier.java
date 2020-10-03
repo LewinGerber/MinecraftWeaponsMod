@@ -20,7 +20,7 @@ public class ToolTier {
         ADVENTURE(4, 2000, 15.0F, 7.0F, 420, () -> {
             return Ingredient.fromItems(new BasicItem());
         }),
-        HALF_SWORD(0, 2000, 0.0F, -0.999F, 420, () -> {
+        HALF_SWORD(0, 2000, 0.0F, -0.99999F, 420, () -> {
             return Ingredient.fromItems(new BasicItem());
         });
 
