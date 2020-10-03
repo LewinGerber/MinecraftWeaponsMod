@@ -36,6 +36,7 @@ and just have fun with it.
 ### 🍜 FOOD:
   - **Magic Mushroom** - 50/50 either you live or you die
 
+
 ## CREDITS:
 This mod was create by: @Simi03, @saexymama and @LewinGerber
 
