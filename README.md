@@ -28,6 +28,7 @@ and just have fun with it.
 ### 📙 ENCHANTMENTS: 
   - **Amaterasu** - inflicts death on impact
   - **Explosion I, II & III** - destroys every wall in its way
+  - **Reaper** - Overwatch?
 
 ### 🦝 ENTITIES:
   - **Raccoon** - a raccoon, shy but fast
