@@ -41,6 +41,17 @@
         "stream": true
       }
     ]
+  },
+
+  "item.time_control.time": {
+    "category": "item",
+    "subtitle": "item.time_control.time",
+    "sounds": [
+      {
+        "name": "nawm:item/item.time_control.time",
+        "stream": true
+      }
+    ]
   }
 
 }

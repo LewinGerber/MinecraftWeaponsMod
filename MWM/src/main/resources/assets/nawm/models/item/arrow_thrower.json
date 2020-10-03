@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "nawm:items/night"
+    "layer0": "nawm:items/arrow_thrower"
   }
 }

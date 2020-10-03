@@ -1,4 +1,4 @@
-package ch.hyperreal.nawm.objects.items.special;
+package ch.hyperreal.nawm.objects.items.misc;
 
 import ch.hyperreal.nawm.MinecraftWeaponsMod;
 import net.minecraft.block.Blocks;

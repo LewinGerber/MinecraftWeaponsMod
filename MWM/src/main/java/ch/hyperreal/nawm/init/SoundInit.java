@@ -27,4 +27,7 @@ public class SoundInit {
     public static final RegistryObject<SoundEvent> AMATERASU = SOUNDS.register("item.amaterasu_bow.amaterasu",
             () ->new SoundEvent(new ResourceLocation(MinecraftWeaponsMod.MOD_ID,"item.amaterasu_bow.amaterasu")));
 
+    public static final RegistryObject<SoundEvent> TIME = SOUNDS.register("item.time_control.time",
+            ()-> new SoundEvent(new ResourceLocation(MinecraftWeaponsMod.MOD_ID, "item.time_control.time")));
+
 }
