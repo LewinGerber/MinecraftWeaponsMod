@@ -18,7 +18,7 @@ public class ToolTier {
     public enum AdventureTier implements IItemTier {
 
         ADVENTURE(4, 2000, 15.0F, 7.0F, 420, () -> {
-            return Ingredient.fromItems(new BasicItem());
+            return Ingredient.fromItems(BasicItem::new);
         }),
         HALF_SWORD(0, 2000, 0.0F, -0.99999F, 420, () -> {
             return Ingredient.fromItems(new BasicItem());
