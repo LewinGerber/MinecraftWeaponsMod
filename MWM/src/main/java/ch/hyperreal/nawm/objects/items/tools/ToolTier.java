@@ -8,7 +8,7 @@ import net.minecraft.util.LazyValue;
 import java.util.function.Supplier;
 
 /**
- * @author Elias Mehran
+ * @author Elias Mehran, Lewin Gerber
  * @version 17.06.2020
  * nAWM
  */
@@ -18,6 +18,9 @@ public class ToolTier {
     public enum AdventureTier implements IItemTier {
 
         ADVENTURE(4, 2000, 15.0F, 7.0F, 420, () -> {
+            return Ingredient.fromItems(BasicItem::new);
+        }),
+        HALF_SWORD(0, 2000, 0.0F, -0.99999F, 420, () -> {
             return Ingredient.fromItems(new BasicItem());
         });
 

@@ -3,17 +3,26 @@ package ch.hyperreal.nawm.objects.items.tools;
 import ch.hyperreal.nawm.MinecraftWeaponsMod;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.enchantment.Enchantments;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.AbstractArrowEntity;
+import net.minecraft.entity.projectile.ArrowEntity;
 import net.minecraft.item.ArrowItem;
 import net.minecraft.item.BowItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.particles.IParticleData;
+import net.minecraft.particles.ParticleType;
+import net.minecraft.particles.ParticleTypes;
 import net.minecraft.stats.Stats;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.SoundEvents;
+import net.minecraft.util.math.MathHelper;
+import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
+
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author Lewin Gerber
@@ -22,6 +31,8 @@ import net.minecraft.world.World;
  */
 
 public class ArrowThrower extends BowItem {
+    private AbstractArrowEntity abstractarrowentity;
+
     public ArrowThrower() {
         super(new Properties().group(MinecraftWeaponsMod.WeaponItemGroup.instance));
     }
@@ -29,7 +40,6 @@ public class ArrowThrower extends BowItem {
     /**
      * Called when the player stops using an Item (stops holding the right mouse button).
      */
-    @Override
     public void onPlayerStoppedUsing(ItemStack stack, World worldIn, LivingEntity entityLiving, int timeLeft) {
         if (entityLiving instanceof PlayerEntity) {
             PlayerEntity playerentity = (PlayerEntity)entityLiving;
@@ -52,19 +62,19 @@ public class ArrowThrower extends BowItem {
                         ArrowItem arrowitem = (ArrowItem)(itemstack.getItem() instanceof ArrowItem ? itemstack.getItem() : Items.ARROW);
                         AbstractArrowEntity abstractarrowentity = arrowitem.createArrow(worldIn, itemstack, playerentity);
                         abstractarrowentity = customeArrow(abstractarrowentity);
-                        abstractarrowentity.shoot(playerentity, playerentity.rotationPitch, playerentity.rotationYaw, 0.0F, f * 10.0F, 2.0F);
+                        abstractarrowentity.shoot(playerentity, playerentity.rotationPitch, playerentity.rotationYaw, 0.0F, f * 15.0F, 0.0F);
                         if (f == 1.0F) {
                             abstractarrowentity.setIsCritical(true);
                         }
 
                         int j = EnchantmentHelper.getEnchantmentLevel(Enchantments.POWER, stack);
                         if (j > 0) {
-                            abstractarrowentity.setDamage(abstractarrowentity.getDamage() + (double)j * 2.0D + 2.0D);
+                            abstractarrowentity.setDamage(abstractarrowentity.getDamage() + (double)j * 0.5D + 0.5D);
                         }
 
                         int k = EnchantmentHelper.getEnchantmentLevel(Enchantments.PUNCH, stack);
                         if (k > 0) {
-                            abstractarrowentity.setKnockbackStrength(k*2);
+                            abstractarrowentity.setKnockbackStrength(k);
                         }
 
                         if (EnchantmentHelper.getEnchantmentLevel(Enchantments.FLAME, stack) > 0) {
@@ -89,9 +99,19 @@ public class ArrowThrower extends BowItem {
                         }
                     }
 
+                    for(int x = 0; x < 10; x++) {
+                        worldIn.addParticle(ParticleTypes.SMOKE, playerentity.getPosX(), playerentity.getPosY()+1, playerentity.getPosZ(), 0.01, 0.005, 0.01);
+                    }
                     playerentity.addStat(Stats.ITEM_USED.get(this));
                 }
             }
         }
     }
 }
+
+/*
+
+
+
+
+*/

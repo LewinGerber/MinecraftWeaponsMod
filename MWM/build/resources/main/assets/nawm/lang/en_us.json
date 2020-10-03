@@ -1,6 +1,7 @@
 {
   "item.nawm.basic_item": "Basic Item",
   "item.nawm.adventure_sword": "Adventure",
+  "item.nawm.half_sword": "Half Sword",
   "item.nawm.scythe": "Scythe",
   "item.nawm.ice_castle": "Ice Castle",
   "item.nawm.magic_mushroom": "OneUp Shroom",
@@ -12,6 +13,7 @@
   "item.nawm.amaterasu_bow": "Amaterasu Bow",
   "item.nawm.cloaking_device": "Cloaking Device",
   "item.nawm.time_control": "Time Control",
+  "item.nawm.health_pack": "Health Pack",
 
   "block.nawm.basic_block": "Basic Block",
   "block.nawm.magic_mushroom_crop": "Magic Seeds",
@@ -25,6 +27,8 @@
 
   "item.nawm.kappa_creeper_spawn_egg": "Kappa Creeper",
   "item.nawm.raccoon_spawn_egg": "Raccoon",
+
+  "item.nawm.arrow_thrower": "Arrow Thrower",
 
   "itemGroup.nAWM": "Minecraft Weapons Mod"
 }
