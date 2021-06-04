@@ -2,7 +2,7 @@
 
 This is the official page of the Minecraft weapons mod. 
 This is a small Minecraft Modification which implements
-multiple different items to create more fun PVP battles.
+multiple different items to create more intense PVP battles.
 We don't follow a specific theme when creating new items 
 and just have fun with it.
 
