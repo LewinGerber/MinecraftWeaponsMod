@@ -39,7 +39,7 @@ and just have fun with it.
 
 
 ## CREDITS:
-This mod was create by: @Simi03, @saexymama and @LewinGerber
+This mod was create by: @Simi03, @eliasmehran and @LewinGerber
 
 + [Textures](https://minecraft.novaskin.me/search?q=textures%20png)
 + [Basis of Repo](https://github.com/LewinGerber/src-Java-Modification-)
